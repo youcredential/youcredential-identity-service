@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Metaform Systems Inc. - initial API and implementation
- *
+ *  \protocols\dcp\dcp-identityhub\credential-offer-api
  */
 
 plugins {
