@@ -1,3 +1,7 @@
+/*
+ * \core\identity-hub-core
+ */
+
 plugins {
     `java-library`
 }
