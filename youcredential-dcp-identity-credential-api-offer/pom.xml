@@ -1,0 +1,118 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.identity</groupId>
+  <artifactId>youcredential-dcp-identity-credential-api-offer</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-dcp-credential-offer-api</name>
+  <description>linkwallet-dcp-credential-offer-api</description>
+
+  <dependencies>
+<!--    api(project(":spi:identity-hub-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>  
+<!--    api(project(":protocols:dcp:dcp-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>  
+<!--    api(libs.edc.spi.jsonld)
+    edc-spi-jsonld = { module = "org.eclipse.edc:json-ld-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>json-ld-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>         
+<!--    api(libs.edc.spi.jwt)
+    edc-spi-jwt = { module = "org.eclipse.edc:jwt-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jwt-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>         
+<!--    api(libs.edc.spi.core)
+    edc-spi-core = { module = "org.eclipse.edc:core-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>core-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>     
+<!--    implementation(project(":protocols:dcp:dcp-identityhub:credentials-api-configuration"))
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-identity-api-credentials-configuration</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+      </dependency>    -->  
+<!--    implementation(project(":protocols:dcp:dcp-transform-lib"))-->
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-lib-transform</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    implementation(libs.edc.spi.validator)
+    edc-spi-validator = { module = "org.eclipse.edc:validator-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>validator-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>         
+<!--    implementation(libs.edc.spi.web)
+    edc-spi-web = { module = "org.eclipse.edc:web-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>web-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>         
+<!--    implementation(libs.edc.spi.dcp)
+    edc-spi-dcp = { module = "org.eclipse.edc:decentralized-claims-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>decentralized-claims-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>         
+<!--    implementation(libs.edc.lib.jerseyproviders)
+    edc-lib-jerseyproviders = { module = "org.eclipse.edc:jersey-providers-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jersey-providers-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>         
+<!--    implementation(libs.edc.lib.transform)
+    edc-lib-transform = { module = "org.eclipse.edc:transform-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transform-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>         
+<!--    implementation(libs.edc.dcp.transform)
+    edc-dcp-transform = { module = "org.eclipse.edc:decentralized-claims-transform", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>decentralized-claims-transform</artifactId>
+        <version>0.18.0</version>
+      </dependency>         
+<!--    implementation(libs.jakarta.rsApi)
+    jakarta-rsApi = { module = "jakarta.ws.rs:jakarta.ws.rs-api", version.ref = "rsApi" }-->
+      <dependency>
+        <groupId>jakarta.ws.rs</groupId>
+        <artifactId>jakarta.ws.rs-api</artifactId>
+        <version>4.0.0</version>
+      </dependency>    
+           
+<!--    testImplementation(libs.edc.junit)
+
+    testImplementation(libs.edc.jsonld)
+    
+    testImplementation(testFixtures(libs.edc.core.jersey))
+    
+    testImplementation(testFixtures(project(":spi:verifiable-credential-spi")))
+    
+    testImplementation(libs.nimbus.jwt)
+    
+    testImplementation(libs.restAssured)  -->
+    
+   </dependencies>     
+</project>

@@ -1,0 +1,231 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.identity</groupId>
+  <artifactId>youcredential-identity-main-service</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-identity-hub-core</name>
+  <description>linkwallet-identity-hub-core</description>
+
+  <dependencies>  
+<!--    api(project(":spi:identity-hub-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(project(":spi:verifiable-credential-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(project(":spi:keypair-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-keypair</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(project(":spi:participant-context-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-participant-context</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(project(":spi:did-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-did</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(project(":spi:holder-credential-request-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-holder-credential-request</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(project(":protocols:dcp:dcp-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    implementation(project(":core:lib:accesstoken-lib"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-lib-accesstoken</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    implementation(project(":core:lib:common-lib"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-lib-common</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>     
+<!--okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }-->
+      <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp-jvm</artifactId>
+        <version>5.3.2</version>
+      </dependency>     
+    
+<!--    implementation(libs.edc.spi.dcp) //SignatureSuiteRegistry
+    edc-spi-dcp = { module = "org.eclipse.edc:decentralized-claims-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>decentralized-claims-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.spi.transaction)
+    edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transaction-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--        implementation(libs.edc.spi.jwt)
+        edc-spi-jwt = { module = "org.eclipse.edc:jwt-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jwt-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.verifiablecredentials)
+    edc-verifiablecredentials = { module = "org.eclipse.edc:verifiable-credentials", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>verifiable-credentials</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.jsonld) // for the JSON-LD mapper
+    edc-jsonld = { module = "org.eclipse.edc:json-ld", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>json-ld</artifactId>
+        <version>0.18.0</version>
+      </dependency>  
+    
+<!--    implementation(libs.edc.lib.util)
+    edc-lib-util = { module = "org.eclipse.edc:util-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>util-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.store)
+    edc-lib-store = { "module" = "org.eclipse.edc:store-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>store-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.jsonld)
+    edc-lib-jsonld = { "module" = "org.eclipse.edc:json-ld-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>json-ld-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.query)
+    edc-lib-query = { "module" = "org.eclipse.edc:query-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>query-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.jws2020)
+    edc-lib-jws2020 = { module = "org.eclipse.edc:jws2020-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jws2020-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.common.crypto)
+    edc-lib-common-crypto = { module = "org.eclipse.edc:crypto-common-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>crypto-common-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.token)
+    edc-lib-token = { module = "org.eclipse.edc:token-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>token-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.statemachine)
+    edc-lib-statemachine = { module = "org.eclipse.edc:state-machine-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>state-machine-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.spi.token)
+    edc-spi-token = { module = "org.eclipse.edc:token-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>token-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.spi.identity.did)
+    edc-spi-identity-did = { module = "org.eclipse.edc:identity-did-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>identity-did-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.vc.ldp)
+    edc-vc-ldp = { module = "org.eclipse.edc:ldp-verifiable-credentials", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>ldp-verifiable-credentials</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.vc.jwt) // JtiValidationRule
+    edc-vc-jwt = { module = "org.eclipse.edc:jwt-verifiable-credentials", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jwt-verifiable-credentials</artifactId>
+        <version>0.18.0</version>
+      </dependency>  
+<!--    implementation(libs.opentelemetry.instrumentation.annotations)
+    opentelemetry-instrumentation-annotations = { module = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-annotations", version.ref = "opentelemetry" }-->
+      <dependency>
+        <groupId>io.opentelemetry.instrumentation</groupId>
+        <artifactId>opentelemetry-instrumentation-annotations</artifactId>
+        <version>2.26.1</version>
+      </dependency>  
+          
+<!--    testImplementation(project(":core:common-core"))
+
+    testImplementation(libs.junit.jupiter.api)
+    
+    testImplementation(libs.awaitility)
+    
+    testImplementation(libs.edc.junit)
+    edc-junit = { module = "org.eclipse.edc:junit", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>           
+<!--    testImplementation(libs.edc.jsonld)
+    edc-jsonld = { module = "org.eclipse.edc:json-ld", version.ref = "edc" }
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>json-ld</artifactId>
+        <version>0.18.0</version>
+      </dependency>    -->
+<!--    testImplementation(testFixtures(project(":spi:keypair-spi")))
+    
+    testImplementation(testFixtures(project(":spi:participant-context-spi")))
+    
+    testImplementation(testFixtures(project(":spi:verifiable-credential-spi")))
+    
+    testImplementation(testFixtures(project(":spi:holder-credential-request-spi")))
+    
+    testImplementation(testFixtures(libs.edc.vc.jwt)) // JWT generator  -->
+    
+  </dependencies>       
+</project>

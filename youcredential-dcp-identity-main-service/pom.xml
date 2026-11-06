@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.identity</groupId>
+  <artifactId>youcredential-dcp-identity-main-service</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-dcp-identityhub-core</name>
+  <description>linkwallet-dcp-identityhub-core</description>
+  
+  <dependencies>
+<!--    api(project(":spi:identity-hub-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(project(":protocols:dcp:dcp-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(libs.edc.spi.identity.did)
+    edc-spi-identity-did = { module = "org.eclipse.edc:identity-did-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>identity-did-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>     
+<!--    implementation(libs.edc.vc.jwt)
+edc-vc-jwt = { module = "org.eclipse.edc:jwt-verifiable-credentials", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jwt-verifiable-credentials</artifactId>
+        <version>0.18.0</version>
+      </dependency> 
+<!--    implementation(libs.edc.lib.token)
+edc-lib-token = { module = "org.eclipse.edc:token-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>token-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency> 
+    
+<!--    testImplementation(libs.edc.junit)
+edc-junit = { module = "org.eclipse.edc:junit", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>         
+<!--    testImplementation(testFixtures(project(":spi:verifiable-credential-spi")))  -->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>verifiable-credential-spi</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>     
+   </dependencies>    
+</project>
