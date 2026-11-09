@@ -2,28 +2,28 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.identity</groupId>
   <artifactId>youcredential-identity-credential-service-offer-handler</artifactId>
-  <version>0.0.3.0</version>
+  <version>0.0.4.0</version>
   <name>linkwallet-extention-credential-offer-handler</name>
   <description>linkwallet-extention-credential-offer-handler</description>
   
   <dependencies>
 <!--    implementation(project(":spi:identity-hub-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-common</artifactId>
+        <version>0.0.3.0</version>
       </dependency>  
 <!--    implementation(project(":spi:verifiable-credential-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    implementation(project(":protocols:dcp:dcp-spi"))-->
        <dependency>
-        <groupId>com.linkwallet.dcp</groupId>
-        <artifactId>linkwallet-dcp-core-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-core-spi</artifactId>
+        <version>0.0.3.0</version>
       </dependency>     
 <!--    implementation(libs.edc.spi.transaction)
     edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->

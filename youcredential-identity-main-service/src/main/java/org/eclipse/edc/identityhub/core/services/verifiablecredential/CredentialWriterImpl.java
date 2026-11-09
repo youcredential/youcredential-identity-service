@@ -64,7 +64,7 @@ public class CredentialWriterImpl implements CredentialWriter {
 
     @Override
     public ServiceResult<Void> write(String holderPid, String issuerPid, Collection<CredentialWriteRequest> writeRequests, String participantContextId) {
-        return transactionContext.execute(() -> {
+//        return transactionContext.execute(() -> {
 
             // get holder request
             var holderRequestResult = holderCredentialRequestStore.findByIdAndLease(holderPid);
@@ -127,7 +127,7 @@ public class CredentialWriterImpl implements CredentialWriter {
             holderCredentialRequestStore.save(holderRequest);
 
             return success();
-        });
+ //       });
     }
 
     private ServiceResult<VerifiableCredentialResource> convertToResource(CredentialWriteRequest credentialWriteRequest, String participantContextId) {

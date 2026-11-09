@@ -2,64 +2,64 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.identity</groupId>
   <artifactId>youcredential-identity-main-service</artifactId>
-  <version>0.0.3.0</version>
+  <version>0.0.4.0</version>
   <name>linkwallet-identity-hub-core</name>
   <description>linkwallet-identity-hub-core</description>
 
   <dependencies>  
 <!--    api(project(":spi:identity-hub-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-common</artifactId> 
+        <version>0.0.3.0</version>
       </dependency> 
 <!--    api(project(":spi:verifiable-credential-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3.0</version>
       </dependency> 
 <!--    api(project(":spi:keypair-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi-keypair</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-keypair</artifactId>
+        <version>0.0.3.0</version>
       </dependency> 
 <!--    api(project(":spi:participant-context-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi-participant-context</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-participant-context</artifactId>
+        <version>0.0.3.0</version>
       </dependency> 
 <!--    api(project(":spi:did-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi-did</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId> 
+        <artifactId>youcredential-core-spi-did</artifactId>
+        <version>0.0.3.0</version>
       </dependency> 
 <!--    api(project(":spi:holder-credential-request-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi-holder-credential-request</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-holder-credential-request</artifactId>
+        <version>0.0.3.0</version>
       </dependency> 
 <!--    api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.dcp</groupId>
-        <artifactId>linkwallet-dcp-core-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-core-spi</artifactId>
+        <version>0.0.3.0</version>
       </dependency> 
 <!--    implementation(project(":core:lib:accesstoken-lib"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-lib-accesstoken</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-lib-accesstoken</artifactId>
+        <version>0.0.3.0</version>
       </dependency> 
 <!--    implementation(project(":core:lib:common-lib"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-lib-common</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-lib-common</artifactId>
+        <version>0.0.3.0</version>
       </dependency>     
 <!--okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }-->
       <dependency>
